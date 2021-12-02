@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Currency exchange server
 
-Things you may want to cover:
+To install:
 
-* Ruby version
+```
+bundle install
+rake db:create
+rake db:migrate
+```
 
-* System dependencies
+To run:
 
-* Configuration
+```
+rails s -p 3001
+```
 
-* Database creation
+To test:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+rake db:migrate RAILS_ENV=test
+rspec
+```
